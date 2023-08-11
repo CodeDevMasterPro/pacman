@@ -1,12 +1,3 @@
-/*!
- * Pacman - HTML5 Game
- * https://passer-by.com/pacman/
- *
- * Copyright (c) 2016-present, HaoLe Zheng
- * Released under the MIT License.
- * https://github.com/mumuy/pacman/blob/master/LICENSE
-*/
-
 //主程序,业务逻辑
 (function(){
 	var _COIGIG = [		//关卡
@@ -579,7 +570,7 @@
 			x:game.width-10,
 			y:game.height-5,
 			draw:function(context){
-				var text = '© passer-by.com';
+				var text = '© 吃豆人';
 				context.font = '12px/20px PressStart2P';
 				context.textAlign = 'left';
 				context.textBaseline = 'top';
@@ -590,7 +581,7 @@
 				context.fillText(text,this.x,this.y);
 			}
 		}).bind('click',function(){
-			window.open('https://passer-by.com');
+			// window.open('');
 		});
 		//事件绑定
 		stage.bind('keydown',function(e){
